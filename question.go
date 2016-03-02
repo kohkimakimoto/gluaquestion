@@ -38,7 +38,7 @@ func secret(L *lua.LState) int {
 	msg := L.CheckString(1)
 
 	fmt.Printf(msg)
-	pass := gopass.GetPasswd()
+	pass, _ := gopass.GetPasswd()
 	L.Push(lua.LString(pass))
 
 	return 1
