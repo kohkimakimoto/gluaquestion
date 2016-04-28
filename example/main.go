@@ -1,21 +1,3 @@
-# gluaquestion
-
-A library of [gopher-lua](https://github.com/yuin/gopher-lua) to prompt the user for input.
-
-## Installation
-
-```
-go get github.com/kohkimakimoto/gluaquestion
-```
-
-## API
-
-* `question.ask(text)`
-* `question.secret(text)`
-
-## Usage
-
-```go
 package main
 
 import (
@@ -41,4 +23,3 @@ print("hello " .. name)
         panic(err)
     }
 }
-```
